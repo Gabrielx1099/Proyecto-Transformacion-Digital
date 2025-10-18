@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{basecliente::layout(~{::section},~{::extraStyles})}">
+<th:block th:fragment="extraStyles">
+    <!-- Si quieres estilos exclusivos para esta página, agrégalos aquí -->
+</th:block>
+<section>
+    <div class="container py-5">
+        <h1 class="text-center">Bienvenido Cliente</h1>
+        <!-- Tu contenido personalizado aquí -->
+    </div>
+</section>
+</html>

@@ -1,0 +1,491 @@
+/* Navbar personalizado con animación ultra suave */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: black;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1000;
+
+  /* Animación ultra suave */
+  opacity: 0;
+  transform: translateY(-5px);
+  animation: navbarFadeInUltraSoft 1.4s ease-out forwards;
+}
+
+/* Animación sutil sin rebote */
+@keyframes navbarFadeInUltraSoft {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.brand::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  transition: width 0.3s ease;
+}
+
+.brand:hover::after {
+  width: 100%;
+}
+
+.brand-highlight {
+  color: #ffd700;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}
+
+.nav-links-custom {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links-custom a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links-custom a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.nav-links-custom a:hover::before {
+  left: 100%;
+}
+
+.nav-links-custom a:hover {
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-link {
+  color: #d4d4d4;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.icon-link:hover {
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.08);
+  transform: scale(1.05);
+}
+
+
+/* Botón de cerrar sesión estilizado - Dirigido específicamente al botón de logout */
+.nav-links-custom button.icon-link,
+button.icon-link[onclick*="handleLogout"],
+button.icon-link:has([aria-label="logout"]),
+.logout-btn,
+button.logout-btn,
+a.logout-btn {
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.7rem 1.5rem !important;
+  border-radius: 25px !important;
+  background: linear-gradient(135deg, #fffef8, #fffdf0) !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+}
+
+.nav-links-custom button.icon-link::before,
+button.icon-link[onclick*="handleLogout"]::before,
+button.icon-link:has([aria-label="logout"])::before,
+.logout-btn::before,
+button.logout-btn::before,
+a.logout-btn::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent) !important;
+  transition: left 0.6s ease !important;
+}
+
+.nav-links-custom button.icon-link:hover::before,
+button.icon-link[onclick*="handleLogout"]:hover::before,
+button.icon-link:has([aria-label="logout"]):hover::before,
+.logout-btn:hover::before,
+button.logout-btn:hover::before,
+a.logout-btn:hover::before {
+  left: 100% !important;
+}
+
+.nav-links-custom button.icon-link:hover,
+button.icon-link[onclick*="handleLogout"]:hover,
+button.icon-link:has([aria-label="logout"]):hover,
+.logout-btn:hover,
+button.logout-btn:hover,
+a.logout-btn:hover {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d) !important;
+  border-color: #ffd700 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.logout-btn::after,
+button.logout-btn::after,
+a.logout-btn::after,
+.nav-right .logout-btn::after {
+  content: '→' !important;
+  margin-left: 0.3rem !important;
+  transition: transform 0.3s ease !important;
+}
+
+.logout-btn:hover::after,
+button.logout-btn:hover::after,
+a.logout-btn:hover::after,
+.nav-right .logout-btn:hover::after {
+  transform: translateX(3px) !important;
+}
+
+/* Footer personalizado mejorado */
+.footer-custom {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d, #1f1f1f);
+  padding: 4rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  animation: fadeInFooter 1.5s ease-in-out;
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(90deg, #ffd700, #ffed4e, #ffffff) 1;
+  position: relative;
+}
+
+.footer-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}
+
+.footer-col h4 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col h4::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  margin-top: 8px;
+  border-radius: 4px;
+  animation: growBar 1.2s ease;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  border-radius: 4px;
+  position: relative;
+  color: #e0e0e0;
+}
+
+.footer-col ul li::before {
+  content: '▶';
+  position: absolute;
+  left: -20px;
+  color: #ffd700;
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li:hover::before {
+  opacity: 1;
+  left: -15px;
+}
+
+.footer-col ul li:hover {
+  color: #ffd700;
+  transform: translateX(10px);
+  padding-left: 1rem;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ffd700;
+}
+
+/* Redes sociales mejoradas */
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social a {
+  font-size: 2rem;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-social a:hover {
+  transform: rotate(15deg) scale(1.3);
+  color: #1a1a1a;
+  background: #ffd700;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Íconos con emojis mejorados */
+.footer-social a.facebook::before {
+  content: "📘";
+}
+
+.footer-social a.instagram::before {
+  content: "📸";
+}
+
+.footer-social a.whatsapp::before {
+  content: "💬";
+}
+
+.footer-social a.twitter::before {
+  content: "🐦";
+}
+
+.footer-social a.linkedin::before {
+  content: "💼";
+}
+
+/* Hamburger mejorado */
+.hamburger {
+  display: none;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1a1a1a;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Animaciones mejoradas */
+@keyframes fadeInFooter {
+  from { 
+    opacity: 0; 
+    transform: translateY(50px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+@keyframes growBar {
+  from { 
+    width: 0; 
+    opacity: 0;
+  }
+  to { 
+    width: 50px;
+    opacity: 1;
+  }
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links-custom {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #ffffff, #fffef8);
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .nav-links-custom.show {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-left {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-right {
+    gap: 1rem;
+  }
+
+  .logout-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-custom {
+    padding: 3rem 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efectos adicionales para mejor UX */
+.nav-links-custom a,
+.icon-link,
+.logout-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-links-custom a:focus,
+.icon-link:focus,
+.logout-btn:focus {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}

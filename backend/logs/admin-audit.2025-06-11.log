@@ -1,0 +1,28 @@
+2025-06-10 23:45:04.241 [http-nio-8081-exec-5] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-06-10 23:45:04.242 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-06-10 23:45:04.270 [http-nio-8081-exec-5] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 7
+2025-06-10 23:45:04.270 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-06-10 23:45:04.271 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 4
+2025-06-10 23:45:04.288 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 3
+2025-06-10 23:45:04.299 [http-nio-8081-exec-6] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-06-10 23:45:04.299 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 7
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 4
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 3
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - === INICIO REGISTRO ADMINISTRADOR ===
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - Intentando registrar administrador con email: 5@gmail.com
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Validación de contraseñas exitosa para email: 5@gmail.com
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Verificando si el email 5@gmail.com ya existe en la base de datos
+2025-06-10 23:45:50.728 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Email 5@gmail.com disponible para registro
+2025-06-10 23:45:50.729 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - Iniciando proceso de creación de usuario administrador
+2025-06-10 23:45:50.789 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Datos del nuevo usuario preparados. Guardando en base de datos...
+2025-06-10 23:45:51.000 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - ✅ ADMINISTRADOR REGISTRADO EXITOSAMENTE
+2025-06-10 23:45:51.001 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - ID generado: 16, Email: 5@gmail.com, Nombre: omar mitma
+2025-06-10 23:45:51.001 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - === FIN PROCESO REGISTRO ADMINISTRADOR ===
+2025-06-10 23:45:51.010 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-06-10 23:45:51.010 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 7
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 4
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 3

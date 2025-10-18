@@ -1,0 +1,120 @@
+2025-06-10 23:39:06.507 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-10 23:39:06.584 [main] INFO  c.P.P.ProyectoFinalIntegradorApplication - Starting ProyectoFinalIntegradorApplication using Java 20.0.1 with PID 18100 (C:\Users\leoal\OneDrive\Escritorio\Hugo123\ProyectoFinalI\backend\target\classes started by leoal in C:\Users\leoal\OneDrive\Escritorio\Hugo123\ProyectoFinalI\backend)
+2025-06-10 23:39:06.586 [main] INFO  c.P.P.ProyectoFinalIntegradorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-10 23:39:07.652 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10 23:39:07.750 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 8 JPA repository interfaces.
+2025-06-10 23:39:08.596 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-10 23:39:08.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-06-10 23:39:08.613 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-10 23:39:08.614 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-10 23:39:08.696 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-10 23:39:08.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2062 ms
+2025-06-10 23:39:08.951 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10 23:39:09.052 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-10 23:39:09.100 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-10 23:39:09.511 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10 23:39:09.568 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-10 23:39:09.844 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44de8e00
+2025-06-10 23:39:09.847 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-10 23:39:09.892 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-06-10 23:39:09.910 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10 23:39:10.863 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10 23:39:10.976 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10 23:39:11.382 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name appUserServicio
+2025-06-10 23:39:11.449 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-10 23:39:12.060 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10 23:39:12.810 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-06-10 23:39:12.817 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-10 23:39:12.819 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10 23:39:12.821 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-10 23:39:12.829 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-10 23:39:12.843 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-10 23:39:12.865 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-06-10 23:41:49.576 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-10 23:41:49.650 [main] INFO  c.P.P.ProyectoFinalIntegradorApplication - Starting ProyectoFinalIntegradorApplication using Java 20.0.1 with PID 17760 (C:\Users\leoal\OneDrive\Escritorio\Hugo123\ProyectoFinalI\backend\target\classes started by leoal in C:\Users\leoal\OneDrive\Escritorio\Hugo123\ProyectoFinalI\backend)
+2025-06-10 23:41:49.652 [main] INFO  c.P.P.ProyectoFinalIntegradorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-10 23:41:50.593 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10 23:41:50.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 8 JPA repository interfaces.
+2025-06-10 23:41:51.422 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-10 23:41:51.434 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-06-10 23:41:51.436 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-10 23:41:51.436 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-10 23:41:51.488 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-10 23:41:51.489 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1789 ms
+2025-06-10 23:41:51.710 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10 23:41:51.786 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-10 23:41:51.835 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-10 23:41:52.180 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10 23:41:52.230 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-10 23:41:52.427 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d7b4e04
+2025-06-10 23:41:52.429 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-10 23:41:52.476 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-06-10 23:41:52.495 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10 23:41:53.406 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10 23:41:53.530 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10 23:41:53.922 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name appUserServicio
+2025-06-10 23:41:53.986 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-10 23:41:54.548 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10 23:41:55.326 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-06-10 23:41:55.349 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-06-10 23:41:55.359 [main] INFO  c.P.P.ProyectoFinalIntegradorApplication - Started ProyectoFinalIntegradorApplication in 6.312 seconds (process running for 6.664)
+2025-06-10 23:44:27.796 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10 23:44:27.796 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-10 23:44:27.799 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-10 23:45:04.241 [http-nio-8081-exec-5] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-06-10 23:45:04.242 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-06-10 23:45:04.270 [http-nio-8081-exec-5] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 7
+2025-06-10 23:45:04.270 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-06-10 23:45:04.271 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 4
+2025-06-10 23:45:04.288 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 3
+2025-06-10 23:45:04.299 [http-nio-8081-exec-6] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-06-10 23:45:04.299 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 7
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 4
+2025-06-10 23:45:04.305 [http-nio-8081-exec-6] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 3
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - === INICIO REGISTRO ADMINISTRADOR ===
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - Intentando registrar administrador con email: 5@gmail.com
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Validación de contraseñas exitosa para email: 5@gmail.com
+2025-06-10 23:45:50.725 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Verificando si el email 5@gmail.com ya existe en la base de datos
+2025-06-10 23:45:50.728 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Email 5@gmail.com disponible para registro
+2025-06-10 23:45:50.729 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - Iniciando proceso de creación de usuario administrador
+2025-06-10 23:45:50.789 [http-nio-8081-exec-8] DEBUG c.P.P.Controlador.AdminControlador - Datos del nuevo usuario preparados. Guardando en base de datos...
+2025-06-10 23:45:51.000 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - ✅ ADMINISTRADOR REGISTRADO EXITOSAMENTE
+2025-06-10 23:45:51.001 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - ID generado: 16, Email: 5@gmail.com, Nombre: omar mitma
+2025-06-10 23:45:51.001 [http-nio-8081-exec-8] INFO  c.P.P.Controlador.AdminControlador - === FIN PROCESO REGISTRO ADMINISTRADOR ===
+2025-06-10 23:45:51.010 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-06-10 23:45:51.010 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 7
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 4
+2025-06-10 23:45:51.156 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 3

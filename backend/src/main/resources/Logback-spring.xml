@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    
+    <!-- CONFIGURACIÓN PARA MOSTRAR LOGS EN CONSOLA -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} %5p --- [%15.15t] %-40.40logger{39} : %m%n%ex
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- CONFIGURACIÓN PARA CONSOLA CON COLORES (solo si se desea mantener colores) -->
+    <appender name="CONSOLE_COLOR" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                %cyan(%d{yyyy-MM-dd HH:mm:ss.SSS}) %highlight(%5p) %magenta(---) %cyan([%15.15t]) %yellow(%-40.40logger{39}) %cyan(:) %m%n%red(%ex{full})
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- CONFIGURACIÓN PARA GUARDAR LOGS EN ARCHIVO -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/admin-app.log</file>
+        
+        <!-- Política de rotación de archivos -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Crear un nuevo archivo cada día -->
+            <fileNamePattern>logs/admin-app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- Mantener logs por 30 días -->
+            <maxHistory>30</maxHistory>
+            <!-- Tamaño máximo por archivo: 10MB -->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!-- Tamaño total máximo de todos los logs: 1GB -->
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n%ex{full}
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- ARCHIVO SEPARADO PARA ERRORES CRÍTICOS -->
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/errors.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/errors.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+            <totalSizeCap>500MB</totalSizeCap>
+        </rollingPolicy>
+        
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n%ex{full}
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- ARCHIVO PARA LOGS DE AUDITORÍA DE ADMINISTRADOR -->
+    <appender name="ADMIN_AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/admin-audit.log</file>
+        
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/admin-audit.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>365</maxHistory> <!-- Mantener auditoría por 1 año -->
+            <totalSizeCap>2GB</totalSizeCap>
+        </rollingPolicy>
+        
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n%ex{short}
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- CONFIGURACIÓN ESPECÍFICA PARA TU CONTROLADOR ADMINISTRADOR -->
+    <logger name="com.ProyectoFinal.ProyectoFinalIntegrador.Controlador.AdminControlador" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="ERROR_FILE" />
+        <appender-ref ref="ADMIN_AUDIT" />
+    </logger>
+
+    <!-- CONFIGURACIÓN PARA TODO EL PAQUETE DE LA APLICACIÓN -->
+    <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="ERROR_FILE" />
+    </logger>
+
+    <!-- CONFIGURACIÓN PARA SPRING BOOT (menos verboso) -->
+    <logger name="org.springframework" level="INFO" />
+    <logger name="org.springframework.security" level="INFO" />
+    <logger name="org.springframework.web" level="INFO" />
+    <logger name="org.hibernate" level="INFO" />
+    <logger name="org.hibernate.SQL" level="INFO" />
+    <logger name="com.zaxxer.hikari" level="INFO" />
+    <logger name="org.apache.tomcat" level="INFO" />
+
+    <!-- CONFIGURACIÓN GENERAL -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="ERROR_FILE" />
+    </root>
+
+    <!-- PERFIL PARA DESARROLLO (más detallado) -->
+    <springProfile name="dev">
+        <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="DEBUG" />
+        <logger name="org.springframework.web" level="DEBUG" />
+        <logger name="org.springframework.security" level="DEBUG" />
+        <logger name="org.hibernate.SQL" level="DEBUG" />
+        <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE" />
+        
+        <!-- En desarrollo, usar consola con colores -->
+        <root level="DEBUG">
+            <appender-ref ref="CONSOLE_COLOR" />
+            <appender-ref ref="FILE" />
+            <appender-ref ref="ERROR_FILE" />
+        </root>
+    </springProfile>
+
+    <!-- PERFIL PARA TESTING -->
+    <springProfile name="test">
+        <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="DEBUG" />
+        <logger name="org.springframework" level="WARN" />
+        <logger name="org.hibernate" level="WARN" />
+        
+        <root level="INFO">
+            <appender-ref ref="CONSOLE" />
+            <appender-ref ref="FILE" />
+        </root>
+    </springProfile>
+
+    <!-- PERFIL PARA PRODUCCIÓN (menos detallado, más seguro) -->
+    <springProfile name="prod">
+        <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="INFO" />
+        <logger name="org.springframework" level="WARN" />
+        <logger name="org.hibernate" level="WARN" />
+        
+        <!-- En producción, no mostrar stack traces completos en consola -->
+        <appender name="PROD_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>
+                    %d{yyyy-MM-dd HH:mm:ss.SSS} %5p --- [%15.15t] %-40.40logger{39} : %m%n
+                </pattern>
+            </encoder>
+        </appender>
+        
+        <root level="WARN">
+            <appender-ref ref="PROD_CONSOLE" />
+            <appender-ref ref="FILE" />
+            <appender-ref ref="ERROR_FILE" />
+        </root>
+    </springProfile>
+
+    <!-- CONFIGURACIÓN PARA LOGS ESTRUCTURADOS EN JSON (opcional) -->
+    <!--
+    <appender name="JSON_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/admin-app.json</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/admin-app.%d{yyyy-MM-dd}.json</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp/>
+                <logLevel/>
+                <loggerName/>
+                <message/>
+                <stackTrace/>
+            </providers>
+        </encoder>
+    </appender>
+    -->
+
+</configuration>

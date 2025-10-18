@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 may. 2025, 10:55:18 a. m.
+    Author     : USER
+*/
+
+.navbar-brand {
+    font-weight: bold;
+    color: #e74c3c !important;
+}
+.nav-link.active, .nav-link.text-danger {
+    color: #e74c3c !important;
+    font-weight: bold;
+}
+.nav-link {
+    color: #333 !important;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #e74c3c !important;
+}
+.badge.bg-danger {
+    font-size: 0.7em;
+}

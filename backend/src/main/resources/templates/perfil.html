@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"      
+      th:replace="baseintranet::layout(~{::section})"    
+      xmlns:sec="http://www.thymeleaf.org">   
+    <head>
+        <title>Perfil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section>
+            <div class="container py-5">
+                <div class="rounded border-4">
+                    <h2 class="text-center mb-4">Profile</h2>
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col">Nombres : </div>
+                        <div class="col" th:text="${appUser.nombre}"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">Apellidos : </div>
+                        <div class="col" th:text="${appUser.apellidos}"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">Email : </div>
+                        <div class="col" th:text="${appUser.email}"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">Telefono : </div>
+                        <div class="col" th:text="${appUser.telefono}"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">Rol : </div>
+                        <div class="col" th:text="${appUser.rol}"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">Direccion : </div>
+                        <div class="col" th:text="${appUser.direccion}"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
