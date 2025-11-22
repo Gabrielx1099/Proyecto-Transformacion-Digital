@@ -11,7 +11,7 @@
 }
 
 .proveedores-header h2 {
-  color: #f0a5a2;
+  color: #1a1a1a;
   font-size: 1.8rem;
   margin-bottom: 10px;
   font-weight: 600;
@@ -26,15 +26,15 @@
 }
 
 .mensaje.success {
-  background-color: #6fe4e4;
+  background-color: #2d2d2d;
   color: white;
-  border: 1px solid #5dd4d4;
+  border: 1px solid #1a1a1a;
 }
 
 .mensaje.error {
-  background-color: #f0a5a2;
+  background-color: #4a4a4a;
   color: white;
-  border: 1px solid #eb9491;
+  border: 1px solid #3a3a3a;
 }
 
 .proveedores-form {
@@ -43,7 +43,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   margin-bottom: 25px;
-  border: 1px solid #e8f6f6;
+  border: 1px solid #e8e8e8;
 }
 
 .form-grid {
@@ -60,7 +60,7 @@
 
 .input-group input {
   padding: 12px 16px;
-  border: 1px solid #d0e8e8;
+  border: 1px solid #d4d4d4;
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
@@ -68,17 +68,17 @@
 
 .input-group input:focus {
   outline: none;
-  border-color: #6fe4e4;
-  box-shadow: 0 0 0 2px rgba(111, 228, 228, 0.15);
+  border-color: #2d2d2d;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
 }
 
 .input-group input:disabled {
-  background-color: #f8fdfd;
+  background-color: #fafafa;
   cursor: not-allowed;
 }
 
 .input-group input::placeholder {
-  color: #7db8b8;
+  color: #999999;
 }
 
 .button-container {
@@ -88,7 +88,7 @@
 
 .button-container button {
   padding: 12px 30px;
-  background-color: #6fe4e4;
+  background-color: #1a1a1a;
   color: white;
   border: none;
   border-radius: 6px;
@@ -100,11 +100,11 @@
 }
 
 .button-container button:hover:not(:disabled) {
-  background-color: #5dd4d4;
+  background-color: #2d2d2d;
 }
 
 .button-container button:disabled {
-  background-color: #a0d4d4;
+  background-color: #cccccc;
   cursor: not-allowed;
 }
 
@@ -113,11 +113,11 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e8f6f6;
+  border: 1px solid #e8e8e8;
 }
 
 .proveedores-lista h3 {
-  color: #4a5555;
+  color: #1a1a1a;
   font-size: 1.4rem;
   margin-bottom: 20px;
   font-weight: 600;
@@ -125,7 +125,7 @@
 
 .loading, .no-data {
   text-align: center;
-  color: #7db8b8;
+  color: #666666;
   font-style: italic;
   padding: 30px;
   font-size: 1rem;
@@ -138,8 +138,8 @@
 }
 
 .proveedor-card {
-  background: #fafcfc;
-  border: 1px solid #e0f2f2;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
   transition: all 0.3s ease;
@@ -147,8 +147,8 @@
 
 .proveedor-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(111, 228, 228, 0.15);
-  border-color: #6fe4e4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #2d2d2d;
 }
 
 .proveedor-info {
@@ -156,7 +156,7 @@
 }
 
 .proveedor-id {
-  color: #7db8b8;
+  color: #666666;
   font-size: 0.85rem;
   font-weight: 500;
   display: block;
@@ -164,21 +164,21 @@
 }
 
 .proveedor-details h4 {
-  color: #4a5555;
+  color: #1a1a1a;
   font-size: 1.2rem;
   margin: 0 0 8px 0;
   font-weight: 600;
 }
 
 .proveedor-details p {
-  color: #6a7575;
+  color: #4a4a4a;
   font-size: 0.9rem;
   margin: 4px 0;
   line-height: 1.4;
 }
 
 .proveedor-details strong {
-  color: #4a5555;
+  color: #1a1a1a;
 }
 
 .proveedor-edit {
@@ -189,7 +189,7 @@
 
 .proveedor-edit input {
   padding: 10px 14px;
-  border: 1px solid #d0e8e8;
+  border: 1px solid #d4d4d4;
   border-radius: 6px;
   font-size: 0.9rem;
   transition: border-color 0.3s ease;
@@ -197,8 +197,8 @@
 
 .proveedor-edit input:focus {
   outline: none;
-  border-color: #6fe4e4;
-  box-shadow: 0 0 0 2px rgba(111, 228, 228, 0.15);
+  border-color: #2d2d2d;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
 }
 
 .proveedor-actions {
@@ -218,30 +218,30 @@
 }
 
 .btn-edit, .btn-save {
-  background-color: #6fe4e4;
+  background-color: #1a1a1a;
   color: white;
 }
 
 .btn-edit:hover:not(:disabled), .btn-save:hover:not(:disabled) {
-  background-color: #5dd4d4;
+  background-color: #2d2d2d;
 }
 
 .btn-delete {
-  background-color: #f0a5a2;
+  background-color: #4a4a4a;
   color: white;
 }
 
 .btn-delete:hover:not(:disabled) {
-  background-color: #eb9491;
+  background-color: #5a5a5a;
 }
 
 .btn-cancel {
-  background-color: #a0c4c4;
+  background-color: #999999;
   color: white;
 }
 
 .btn-cancel:hover:not(:disabled) {
-  background-color: #8bb8b8;
+  background-color: #7a7a7a;
 }
 
 .proveedor-actions button:disabled {

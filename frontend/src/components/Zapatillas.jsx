@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
-import "../css/Pañaleria.css";
+import "../css/Zapatillas.css";
 import { Link, useNavigate } from 'react-router-dom';
 import { useCarrito } from '../context/CarritoContext';
 
 // Importar las imágenes locales para el carrusel
-import bebeImg from "../imagenes/bebe.png";
-import bebe2Img from "../imagenes/bebe3.png";
-import pañal1Img from "../imagenes/pañal1.jpg";
-import pañal2Img from "../imagenes/pañal2.jpg";
-import pañal4Img from "../imagenes/pañal3.jpg";
-import pañal5Img from "../imagenes/pañal4.jpg";
-import pañal6Img from "../imagenes/pañal5.jpg";
+import Img1 from "../imagenes/Picture1.png";
+import Img2 from "../imagenes/Picture2.png";
+import Img3 from "../imagenes/image1.jpg";
+import Img4 from "../imagenes/image2.jpg";
+import Img5 from "../imagenes/image3.jpg";
+import Img6 from "../imagenes/image4.jpg";
+import Img7 from "../imagenes/image5.jpg";
 
 // Carrusel (mantener la definición)
 const Carrusel = () => {
   // Usamos las imágenes locales para el carrusel
-  const images = [bebeImg, bebe2Img, pañal1Img, pañal2Img, pañal4Img, pañal5Img, pañal6Img];
+  const images = [Img1,Img2,Img3, Img4, Img5, Img6,Img7];
 
   const [current, setCurrent] = useState(0);
 
@@ -67,8 +67,8 @@ const CATEGORIA_ID = 1; // ID para Pañalería (Corregido según el comportamien
 // Eliminar o comentar productosBase ya que ahora se cargarán de la BD
 // const productosBase = [...];
 
-// Cambiar el nombre de la función a Pañaleria
-function Pañaleria() {
+
+function Zapatillas() {
   const [productosPañaleria, setProductosPañaleria] = useState([]);
   const [filtroActivo, setFiltroActivo] = useState('Todos');
   const [busqueda, setBusqueda] = useState('');
@@ -77,7 +77,7 @@ function Pañaleria() {
   const [marcas, setMarcas] = useState([]);
   const [subcategorias, setSubcategorias] = useState([]);
 
-  const filtros = ["Todos", "Bebé", "Adulto", "Higiene"]; // Mantener si filtras por subcategoría o tipo localmente
+  const filtros = ["Todos","Hombre/Casual","Mujer/Casual"]; // Mantener si filtras por subcategoría o tipo localmente
 
   const navigate = useNavigate();
   const { fetchCarrito } = useCarrito();
@@ -291,5 +291,4 @@ function Pañaleria() {
   );
 }
 
-// Exportar la función con el nombre corregido
-export default Pañaleria;
+export default Zapatillas;

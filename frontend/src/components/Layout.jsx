@@ -108,8 +108,8 @@ const Layout = ({ children }) => {
 
         <div className={`nav-links-custom ${menuAbierto ? 'show' : ''}`}>
           <Link to="/" onClick={() => setMenuAbierto(false)}>Inicio</Link>
-          <Link to="/pañaleria" onClick={() => setMenuAbierto(false)}>Zapatillas</Link>
-          <Link to="/higiene" onClick={() => setMenuAbierto(false)}>Zapatos</Link>
+          <Link to="/zapatillas" onClick={() => setMenuAbierto(false)}>Zapatillas</Link>
+          <Link to="/zapatos" onClick={() => setMenuAbierto(false)}>Zapatos</Link>
           
           {!isLoggedIn && (
             <>
@@ -183,8 +183,8 @@ const Layout = ({ children }) => {
           <h4>Enlaces rápidos</h4>
           <ul>
             <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/pañaleria">Zapatillas</Link></li>
-            <li><Link to="/Higiene">Zapatos</Link></li>
+            <li><Link to="/zapatillas">Zapatillas</Link></li>
+            <li><Link to="/zapatos">Zapatos</Link></li>
             <li><Link to="/contacto">Contacto</Link></li>
           </ul>
         </div>

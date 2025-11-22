@@ -97,8 +97,8 @@ function Productos() {
       const categoriasData = await categoriasResponse.json();
       // Invertir nombres para IDs 1 y 2 si es necesario para que coincidan con la visualización de catálogos
       const adjustedCategoriasData = categoriasData.map(cat => {
-        if (cat.id_categoria === 1) return { ...cat, nombre: 'Pañalería' }; // Si ID 1 es Higiene en BD, mostrar como Pañalería
-        if (cat.id_categoria === 2) return { ...cat, nombre: 'Higiene' };   // Si ID 2 es Pañalería en BD, mostrar como Higiene
+        if (cat.id_categoria === 1) return { ...cat, nombre: 'Zapatillas' }; // Si ID 1 es Higiene en BD, mostrar como Pañalería
+        if (cat.id_categoria === 2) return { ...cat, nombre: 'Zapatos' };   // Si ID 2 es Pañalería en BD, mostrar como Higiene
         return cat; // Mantener otras categorías como están
       });
       setCategorias(adjustedCategoriasData);

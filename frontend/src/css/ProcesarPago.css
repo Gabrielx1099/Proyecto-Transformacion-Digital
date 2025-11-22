@@ -2,7 +2,7 @@
 
 .procesar-pago-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #c7f7f7 0%, #f9d6d5 50%, #ffc0ec 100%);
+  background: linear-gradient(135deg, #f3ea65 0%, #eeebeb 50%, #f7e547 100%);
   padding: 20px;
   position: relative;
   overflow-x: hidden;
@@ -10,7 +10,7 @@
 
 /* Decoraciones de fondo */
 .procesar-pago-container::before {
-  content: '🍼👶🧸💕🌙⭐';
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -51,11 +51,11 @@
 }
 
 .pago-header h1 {
-  color: #333;
+  color: #000000;
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 25px 0;
-  background: linear-gradient(135deg, #437e6c, #f9d6d5);
+  background: linear-gradient(135deg, #000000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -87,7 +87,7 @@
 }
 
 .paso.completado {
-  background: linear-gradient(135deg, #c7f7f7, #f9d6d5);
+  background: linear-gradient(135deg, #efff11, #ffffff);
   color: #333;
   border-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 4px 15px rgba(199, 247, 247, 0.3);
@@ -100,7 +100,7 @@
 }
 
 .paso.activo {
-  background: linear-gradient(135deg, #ffc0ec, #f7bbe8);
+  background: linear-gradient(135deg, #efff11, #ffffff);
   color: #333;
   border-color: white;
   box-shadow: 0 6px 20px rgba(255, 192, 236, 0.4);
@@ -130,22 +130,6 @@
   position: relative;
 }
 
-.pago-principal::before {
-  content: '👶';
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  font-size: 30px;
-  background: linear-gradient(135deg, #ffc0ec, #f7bbe8);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(255, 192, 236, 0.4);
-  border: 3px solid white;
-}
 
 /* ===== MÉTODOS DE PAGO ===== */
 .metodos-pago h2 {
@@ -202,7 +186,7 @@
 }
 
 .metodo-label:has(input:checked) {
-  background: linear-gradient(135deg, #ffc0ec, #f7bbe8);
+  background: linear-gradient(135deg, #ffe570, #ffe570);
   border-color: white;
   box-shadow: 0 8px 25px rgba(255, 192, 236, 0.4);
 }
@@ -534,27 +518,27 @@
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, rgba(199, 247, 247, 0.8), rgba(249, 214, 213, 0.8));
-  color: #333;
+  background: linear-gradient(135deg, rgba(241, 233, 107, 0.8), rgb(251, 255, 5));
+  color: #000000;
   border-color: rgba(255, 255, 255, 0.8);
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #c7f7f7, #f9d6d5);
+  background: linear-gradient(135deg, #fff567, #fff567);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(199, 247, 247, 0.4);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #ffc0ec, #f7bbe8);
-  color: #333;
+  background: linear-gradient(135deg, #fff567, #fff567);
+  color: #000000;
   border-color: white;
   flex-grow: 1;
   max-width: 300px;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: linear-gradient(135deg, #f7bbe8, #ffc0ec);
+  background: linear-gradient(135deg, #ffee00, #fff567);
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(255, 192, 236, 0.5);
 }
@@ -784,7 +768,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 30px;
-  background: linear-gradient(135deg, #437e6c, #ffc0ec);
+  background: linear-gradient(135deg, #000000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

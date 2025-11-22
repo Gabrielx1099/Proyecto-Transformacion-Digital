@@ -18,7 +18,7 @@
    2. TÍTULO
    =============================== */
 .productos-container h2 {
-    color: #474b4e;
+    color: #1a1a1a;
     font-size: 1.8em;
     font-weight: 600;
     text-align: center;
@@ -33,7 +33,7 @@
     gap: 18px;
     padding: 20px;
     background-color: #ffffff;
-    border: 1px solid #e8f6f6;
+    border: 1px solid #e8e8e8;
     border-radius: 8px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
@@ -48,7 +48,7 @@
    4. LABELS
    =============================== */
 .productos-container form label {
-    color: #4a5555;
+    color: #1a1a1a;
     font-size: 0.95em;
     font-weight: 600;
     margin-bottom: 6px;
@@ -65,7 +65,7 @@
     padding: 12px;
     font-size: 1em;
     background-color: #ffffff;
-    border: 1px solid #d0e8e8;
+    border: 1px solid #d4d4d4;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
@@ -79,7 +79,7 @@
 .productos-container form input[type="number"]:hover,
 .productos-container form input[type="file"]:hover,
 .productos-container form select:hover {
-    border-color: #6fe4e4;
+    border-color: #2d2d2d;
 }
 
 /* Estado Focus */
@@ -87,23 +87,23 @@
 .productos-container form input[type="number"]:focus,
 .productos-container form input[type="file"]:focus,
 .productos-container form select:focus {
-    border-color: #6fe4e4;
+    border-color: #1a1a1a;
     outline: none;
-    box-shadow: 0 0 0 2px rgba(111, 228, 228, 0.15);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
 }
 
 /* Estados de Validación */
 .productos-container form input:invalid {
-    border-color: #f0a5a2;
+    border-color: #666666;
 }
 
 .productos-container form input:valid {
-    border-color: #6fe4e4;
+    border-color: #2d2d2d;
 }
 
 /* Placeholder */
 .productos-container form input::placeholder {
-    color: #a0d4d4;
+    color: #999999;
 }
 
 /* ===============================
@@ -111,11 +111,11 @@
    =============================== */
 .productos-container form input[type="file"] {
     cursor: pointer;
-    background-color: #fafcfc;
+    background-color: #fafafa;
 }
 
 .productos-container form input[type="file"]::-webkit-file-upload-button {
-    background-color: #6fe4e4;
+    background-color: #1a1a1a;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -127,7 +127,7 @@
 }
 
 .productos-container form input[type="file"]::-webkit-file-upload-button:hover {
-    background-color: #5dd4d4;
+    background-color: #2d2d2d;
 }
 
 /* ===============================
@@ -136,19 +136,19 @@
 .productos-container form button[type="submit"] {
     padding: 14px 24px;
     margin-top: 15px;
-    background-color: #f0a5a2;
+    background-color: #2d2d2d;
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(240, 165, 162, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s ease;
 }
 
 .productos-container form button[type="submit"]:hover {
-    background-color: #eb9491;
+    background-color: #1a1a1a;
 }
 
 /* ===============================
@@ -165,19 +165,19 @@
 
 /* Tipos de mensajes */
 .productos-container p.success {
-    background-color: #6fe4e4;
+    background-color: #2d2d2d;
     color: white;
 }
 
 .productos-container p.error {
-    background-color: #f0a5a2;
+    background-color: #4a4a4a;
     color: white;
 }
 
 .productos-container p.info {
-    background-color: #f8fdfd;
-    color: #4a5555;
-    border: 1px solid #6fe4e4;
+    background-color: #fafafa;
+    color: #1a1a1a;
+    border: 1px solid #d4d4d4;
 }
 
 /* ===============================
@@ -195,7 +195,7 @@
 }
 
 .productos-container table thead {
-    background: linear-gradient(135deg, #6fe4e4 0%, #5dd4d4 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 }
 
 .productos-container table thead th {
@@ -206,18 +206,18 @@
     font-size: 0.95em;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid #5dd4d4;
+    border-bottom: 2px solid #000000;
 }
 
 .productos-container table tbody tr {
     transition: all 0.3s ease;
-    border-bottom: 1px solid #f0f8f8;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .productos-container table tbody tr:hover {
-    background-color: #f8fdfd;
+    background-color: #fafafa;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(111, 228, 228, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .productos-container table tbody tr:last-child {
@@ -226,20 +226,20 @@
 
 .productos-container table tbody td {
     padding: 16px 15px;
-    color: #4a5555;
+    color: #4a4a4a;
     font-size: 0.95em;
     vertical-align: middle;
 }
 
 .productos-container table tbody td:first-child {
     font-weight: 600;
-    color: #474b4e;
+    color: #1a1a1a;
 }
 
 /* Estilo para el precio */
 .productos-container table tbody td:nth-child(2) {
     font-weight: 600;
-    color: #f0a5a2;
+    color: #2d2d2d;
     font-size: 1.05em;
 }
 
@@ -252,7 +252,7 @@
 /* Botón de acciones en la tabla */
 .productos-container table tbody td button {
     padding: 8px 16px;
-    background: linear-gradient(135deg, #f0a5a2 0%, #eb9491 100%);
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
     color: white;
     border: none;
     border-radius: 20px;
@@ -260,13 +260,13 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 6px rgba(240, 165, 162, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .productos-container table tbody td button:hover {
-    background: linear-gradient(135deg, #eb9491 0%, #e68380 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(240, 165, 162, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Botón principal (Agregar Nuevo Producto) y contenido */
@@ -278,7 +278,7 @@
 
 .productos-container > div > button {
     padding: 14px 28px;
-    background: linear-gradient(135deg, #6fe4e4 0%, #5dd4d4 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
     border: none;
     border-radius: 25px;
@@ -287,23 +287,23 @@
     cursor: pointer;
     margin-bottom: 25px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(111, 228, 228, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .productos-container > div > button:hover {
-    background: linear-gradient(135deg, #5dd4d4 0%, #4cc4c4 100%);
+    background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(111, 228, 228, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Título de la lista */
 .productos-container h3 {
-    color: #474b4e;
+    color: #1a1a1a;
     font-size: 1.4em;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #6fe4e4;
+    border-bottom: 3px solid #1a1a1a;
     position: relative;
     text-align: center;
     max-width: 1000px;
@@ -319,19 +319,19 @@
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(135deg, #f0a5a2 0%, #eb9491 100%);
+    background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
 }
 
 /* Mensaje cuando no hay productos */
 .productos-container p {
     text-align: center;
-    color: #4a5555;
+    color: #4a4a4a;
     font-size: 1.1em;
     font-style: italic;
     padding: 40px 20px;
-    background-color: #f8fdfd;
+    background-color: #fafafa;
     border-radius: 10px;
-    border: 2px dashed #d0e8e8;
+    border: 2px dashed #d4d4d4;
     margin: 20px auto 0 auto;
     max-width: 1000px;
 }

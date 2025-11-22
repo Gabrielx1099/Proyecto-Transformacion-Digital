@@ -2,8 +2,8 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background: linear-gradient(135deg, #07ffff 0%, #437e6c 100%);
-    color: #333;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #000;
     border: none;
     border-radius: 50%;
     width: 60px;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 8px 25px rgba(199, 247, 247, 0.4), 0 4px 15px rgba(249, 214, 213, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4), 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: all 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0.6);
@@ -21,7 +21,7 @@
 
 .floating-cart-button:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 35px rgba(199, 247, 247, 0.5), 0 6px 20px rgba(249, 214, 213, 0.4);
+    box-shadow: 0 12px 35px rgba(255, 215, 0, 0.5), 0 6px 20px rgba(255, 165, 0, 0.4);
 }
 
 .floating-cart-button:active {
@@ -32,8 +32,8 @@
     position: absolute;
     top: -8px;
     right: -8px;
-    background: linear-gradient(135deg, #ffc0ec 0%, #f7bbe8 100%);
-    color: #333;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+    color: #000;
     border-radius: 50%;
     padding: 4px 8px;
     font-size: 11px;
@@ -60,7 +60,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(199, 247, 247, 0.2) 0%, rgba(249, 214, 213, 0.2) 100%), 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), 
                 rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
@@ -78,16 +78,16 @@
 }
 
 .mini-carrito-container {
-    background: linear-gradient(135deg, white 0%, #c7f7f7 1%, white 20%);
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 1%, #ffffff 20%);
     padding: 25px;
     border-radius: 20px;
     width: 95%;
     max-width: 450px;
-    box-shadow: 0 20px 60px rgba(199, 247, 247, 0.3), 
-                0 10px 30px rgba(249, 214, 213, 0.2),
-                0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3), 
+                0 10px 30px rgba(0, 0, 0, 0.5),
+                0 5px 15px rgba(0, 0, 0, 0.8);
     position: relative;
-    border: 1px solid rgba(199, 247, 247, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     animation: slideIn 0.4s ease;
 }
 
@@ -106,25 +106,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #f9d6d5;
+    border-bottom: 2px solid #FFD700;
     padding-bottom: 15px;
     margin-bottom: 20px;
-    background: linear-gradient(90deg, #c7f7f7 0%, #f9d6d5 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #f9f9f9 50%, #ffffff 100%);
     margin: -25px -25px 20px -25px;
     padding: 20px 25px 15px 25px;
     border-radius: 20px 20px 0 0;
 }
 
 .mini-carrito-header h3 {
-    color: #333;
+    color: #000;
     font-weight: 600;
     margin: 0;
     font-size: 18px;
 }
 
 .mini-carrito-close-btn {
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     font-size: 22px;
     cursor: pointer;
     border-radius: 50%;
@@ -133,14 +133,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: #000;
     transition: all 0.2s ease;
 }
 
 .mini-carrito-close-btn:hover {
-    background: white;
+    background: #FFD700;
     transform: scale(1.1);
-    color: #333;
+    color: #000;
 }
 
 .mini-carrito-body {
@@ -154,12 +154,12 @@
 }
 
 .mini-carrito-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f5f5f5;
     border-radius: 10px;
 }
 
 .mini-carrito-body::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #c7f7f7, #f9d6d5);
+    background: linear-gradient(135deg, #FFD700, #FFA500);
     border-radius: 10px;
 }
 
@@ -174,12 +174,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid rgba(199, 247, 247, 0.3);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
     transition: all 0.2s ease;
 }
 
 .mini-carrito-item:hover {
-    background: linear-gradient(90deg, rgba(199, 247, 247, 0.1), rgba(249, 214, 213, 0.1));
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -199,7 +199,7 @@
 
 .mini-carrito-item .item-name {
     font-weight: 500;
-    color: #333;
+    color: #000;
 }
 
 .mini-carrito-item .item-price {
@@ -210,7 +210,7 @@
 .mini-carrito-item .item-quantity-controls {
     display: flex;
     align-items: center;
-    background: rgba(199, 247, 247, 0.2);
+    background: rgba(255, 215, 0, 0.1);
     border-radius: 8px;
     padding: 2px;
 }
@@ -219,33 +219,34 @@
     width: 30px;
     height: 30px;
     margin: 0 2px;
-    border: 1px solid rgba(199, 247, 247, 0.5);
-    background: white;
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    background: #ffffff;
     cursor: pointer;
     border-radius: 6px;
-    color: #333;
+    color: #000;
     font-weight: bold;
     transition: all 0.2s ease;
 }
 
 .mini-carrito-item .item-quantity-controls button:hover {
-    background: linear-gradient(135deg, #c7f7f7, #f9d6d5);
+    background: linear-gradient(135deg, #FFD700, #FFA500);
     transform: scale(1.1);
     border-color: transparent;
+    color: #000;
 }
 
 .mini-carrito-item .item-quantity-controls span {
     margin: 0 8px;
     font-weight: 600;
-    color: #333;
+    color: #000;
     min-width: 20px;
     text-align: center;
 }
 
 .mini-carrito-item .item-remove-btn {
-    background: linear-gradient(135deg, #f9d6d5 0%, #c7f7f7 100%);
-    color: #333;
-    border: 1px solid rgba(249, 214, 213, 0.3);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #000;
+    border: 1px solid rgba(255, 215, 0, 0.3);
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -256,16 +257,16 @@
 }
 
 .mini-carrito-item .item-remove-btn:hover {
-    background: linear-gradient(135deg, #f9d6d5 30%, #c7f7f7 100%);
+    background: linear-gradient(135deg, #FFA500 30%, #FFD700 100%);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(249, 214, 213, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
 }
 
 .mini-carrito-footer {
     margin-top: 20px;
-    border-top: 2px solid rgba(199, 247, 247, 0.3);
+    border-top: 2px solid rgba(255, 215, 0, 0.3);
     padding-top: 20px;
-    background: linear-gradient(90deg, rgba(199, 247, 247, 0.1), rgba(249, 214, 213, 0.1));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8));
     margin-left: -25px;
     margin-right: -25px;
     margin-bottom: -25px;
@@ -282,14 +283,14 @@
 
 .mini-carrito-total strong {
     font-size: 18px;
-    color: #333;
+    color: #000;
     margin-right: 10px;
 }
 
 .mini-carrito-finalizar-btn {
-    background: linear-gradient(135deg, #c7f7f7 0%, #f9d6d5 100%);
-    color: #333;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #000;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     padding: 12px 25px;
     border-radius: 12px;
     cursor: pointer;
@@ -302,9 +303,9 @@
 }
 
 .mini-carrito-finalizar-btn:hover {
-    background: linear-gradient(135deg, #f9d6d5 0%, #c7f7f7 100%);
+    background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(199, 247, 247, 0.4), 0 4px 15px rgba(249, 214, 213, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4), 0 4px 15px rgba(255, 165, 0, 0.4);
     border-color: white;
 }
 
@@ -321,13 +322,14 @@
 
 .mini-carrito-empty-icon {
     font-size: 48px;
-    color: #c7f7f7;
+    color: #FFD700;
     margin-bottom: 15px;
 }
 
 .mini-carrito-empty p {
     margin: 0;
     font-size: 16px;
+    color: #333;
 }
 
 /* Responsive */

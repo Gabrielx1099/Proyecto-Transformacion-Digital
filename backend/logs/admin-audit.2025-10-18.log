@@ -1,0 +1,84 @@
+2025-10-18 08:21:47.985 [http-nio-8081-exec-4] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:21:48.008 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:21:48.020 [http-nio-8081-exec-4] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:21:48.022 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:21:48.022 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:21:48.022 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:21:48.036 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:21:48.036 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:21:48.036 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:21:48.036 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:21:48.036 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:21:48.036 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:21:55.916 [http-nio-8081-exec-5] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:21:55.916 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:21:55.924 [http-nio-8081-exec-5] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:21:55.924 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:21:55.924 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:21:55.924 [http-nio-8081-exec-5] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:21:55.937 [http-nio-8081-exec-7] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:21:55.937 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:21:55.945 [http-nio-8081-exec-7] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:21:55.947 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:21:55.947 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:21:55.947 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:22:02.329 [http-nio-8081-exec-1] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:22:02.329 [http-nio-8081-exec-1] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:22:02.334 [http-nio-8081-exec-1] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:22:02.338 [http-nio-8081-exec-1] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:22:02.338 [http-nio-8081-exec-1] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:22:02.338 [http-nio-8081-exec-1] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:22:02.348 [http-nio-8081-exec-3] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:22:02.348 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:22:02.356 [http-nio-8081-exec-3] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:22:02.356 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:22:02.356 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:22:02.356 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:27:21.501 [http-nio-8081-exec-4] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:27:21.503 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:27:21.514 [http-nio-8081-exec-4] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 3
+2025-10-18 08:27:21.517 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:27:21.518 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:27:21.518 [http-nio-8081-exec-4] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 2
+2025-10-18 08:27:21.533 [http-nio-8081-exec-7] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:27:21.533 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:27:21.540 [http-nio-8081-exec-7] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 3
+2025-10-18 08:27:21.540 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:27:21.540 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:27:21.540 [http-nio-8081-exec-7] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 2
+2025-10-18 08:50:50.197 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:50:50.200 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:50:50.207 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:50:50.208 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:50:50.209 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:50:50.209 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:50:50.216 [http-nio-8081-exec-2] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:50:50.217 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:50:50.224 [http-nio-8081-exec-2] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:50:50.225 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:50:50.225 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:50:50.225 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:50:51.488 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:50:51.490 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:50:51.525 [http-nio-8081-exec-9] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:50:51.526 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:50:51.526 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:50:51.526 [http-nio-8081-exec-9] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 08:50:51.532 [http-nio-8081-exec-2] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 08:50:51.532 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 08:50:51.537 [http-nio-8081-exec-2] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 1
+2025-10-18 08:50:51.538 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 08:50:51.538 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 08:50:51.538 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 0
+2025-10-18 09:05:49.861 [http-nio-8081-exec-2] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 09:05:49.888 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 09:05:49.905 [http-nio-8081-exec-2] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 2
+2025-10-18 09:05:49.906 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 09:05:49.910 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 09:05:49.911 [http-nio-8081-exec-2] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 1
+2025-10-18 09:05:49.919 [http-nio-8081-exec-3] INFO  c.P.P.Controlador.AdminControlador - 📋 Solicitando lista completa de usuarios
+2025-10-18 09:05:49.920 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - Ejecutando consulta para obtener todos los usuarios
+2025-10-18 09:05:49.930 [http-nio-8081-exec-3] INFO  c.P.P.Controlador.AdminControlador - ✅ Lista de usuarios obtenida exitosamente. Total usuarios: 2
+2025-10-18 09:05:49.931 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - Usuarios encontrados por rol:
+2025-10-18 09:05:49.931 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - - Administradores: 1
+2025-10-18 09:05:49.933 [http-nio-8081-exec-3] DEBUG c.P.P.Controlador.AdminControlador - - Clientes: 1

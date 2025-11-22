@@ -26,8 +26,8 @@ const SubcategoriaManagement = () => {
       if (!res.ok) throw new Error('Error al cargar categorías');
       const data = await res.json();
       const adjustedCategoriasData = data.map(cat => {
-        if (cat.id_categoria === 2) return { ...cat, nombre: 'Pañalería' }; // Si ID 1 es Higiene en BD, mostrar como Pañalería
-        if (cat.id_categoria === 1) return { ...cat, nombre: 'Higiene' };   // Si ID 2 es Pañalería en BD, mostrar como Higiene
+        if (cat.id_categoria === 2) return { ...cat, nombre: 'Zapatillas' }; // Si ID 1 es Higiene en BD, mostrar como Pañalería
+        if (cat.id_categoria === 1) return { ...cat, nombre: 'Zapatos' };   // Si ID 2 es Pañalería en BD, mostrar como Higiene
         return cat; // Mantener otras categorías como están
       });
       setCategorias(adjustedCategoriasData.map(cat => ({ id_categoria: cat.id_categoria, nombre: cat.nombre })));

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import '../css/Higiene.css';
+import '../css/Zapatos.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCarrito } from '../context/CarritoContext';
-import imagen1 from "../imagenes/Higiene1.jpg"; 
-import imagen2 from "../imagenes/Higiene2.jpg";
-import imagen3 from "../imagenes/Higiene3.png";
-import imagen4 from "../imagenes/Higiene4.png";
+import imagen1 from "../imagenes/Imagen1.jpg"; 
+import imagen2 from "../imagenes/Imagen2.jpg";
+import imagen3 from "../imagenes/Imagen3.png";
+import imagen4 from "../imagenes/Imagen4.png";
 // Importaciones de imágenes locales eliminadas, ahora se cargarán desde el backend
 
 // Define el puerto de tu backend Java (por defecto 8081, cámbialo si lo modificaste)
@@ -62,9 +62,9 @@ const Carrusel = () => {
 // Datos de productos locales eliminados, ahora se cargarán de la BD
 const productos = [];
 
-const filtros = ['Todos', 'Shampoo', 'Pasta', 'Cepillo']; // Mantener si quieres filtrar por tipo en frontend
+const filtros = ['Todos', 'Hombre/formal','Mujer/Formal']; // Mantener si quieres filtrar por tipo en frontend
 
-const Higiene = () => {
+const Zapatos = () => {
   const [productosHigiene, setProductosHigiene] = useState([]);
   const [filtroActivo, setFiltroActivo] = useState('Todos');
   const [busqueda, setBusqueda] = useState('');
@@ -289,4 +289,4 @@ const Higiene = () => {
   );
 };
 
-export default Higiene;
+export default Zapatos;

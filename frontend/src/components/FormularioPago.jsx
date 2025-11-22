@@ -20,7 +20,7 @@ const FormularioPago = () => {
     // Dirección de envío
     direccion: '',
     distrito: '',
-    provincia: 'Callao',
+    provincia: 'Lima',
     departamento: 'Lima',
     codigoPostal: '',
     referencia: '',

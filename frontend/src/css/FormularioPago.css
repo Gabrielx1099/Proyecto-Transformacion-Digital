@@ -1,28 +1,28 @@
-/* FormularioPago.css - Estilo para Tienda de Bebés */
+/* FormularioPago.css - Estilo Blanco, Negro y Amarillo */
 
 /* Variables de colores */
 :root {
-  --primary-gradient: linear-gradient(135deg, #c7f7f7 0%, #f9d6d5 100%);
-  --secondary-gradient: linear-gradient(135deg, #ffc0ec 0%, #f7bbe8 100%);
-  --accent-gradient: linear-gradient(135deg, #07ffff 0%, #437e6c 100%);
-  --soft-gradient: linear-gradient(135deg, rgba(199, 247, 247, 0.1) 0%, rgba(249, 214, 213, 0.1) 100%);
-  --text-primary: #333;
-  --text-secondary: #666;
+  --primary-gradient: linear-gradient(135deg, #ffffff 0%, #ffeb3b 100%);
+  --secondary-gradient: linear-gradient(135deg, #ffd700 0%, #ffeb3b 100%);
+  --accent-gradient: linear-gradient(135deg, #ffeb3b 0%, #ffc107 100%);
+  --soft-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 235, 59, 0.1) 100%);
+  --text-primary: #000000;
+  --text-secondary: #333333;
   --error-color: #ff6b6b;
   --success-color: #51cf66;
   --border-radius: 15px;
-  --shadow-soft: 0 8px 25px rgba(199, 247, 247, 0.3), 0 4px 15px rgba(249, 214, 213, 0.2);
-  --shadow-hover: 0 12px 35px rgba(199, 247, 247, 0.4), 0 6px 20px rgba(249, 214, 213, 0.3);
+  --shadow-soft: 0 8px 25px rgba(0, 0, 0, 0.1), 0 4px 15px rgba(255, 235, 59, 0.15);
+  --shadow-hover: 0 12px 35px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(255, 235, 59, 0.2);
 }
 
 /* Container principal */
 .formulario-pago-container {
   min-height: 100vh;
   background: linear-gradient(135deg, 
-    rgba(199, 247, 247, 0.1) 0%, 
-    rgba(249, 214, 213, 0.1) 30%, 
-    rgba(255, 192, 236, 0.1) 60%, 
-    rgba(199, 247, 247, 0.1) 100%
+    rgba(240, 240, 240, 1) 0%, 
+    rgba(220, 220, 220, 1) 30%, 
+    rgba(255, 235, 59, 0.2) 60%, 
+    rgba(230, 230, 230, 1) 100%
   );
   padding: 20px 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,9 +39,9 @@
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(199, 247, 247, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(249, 214, 213, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(255, 192, 236, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(255, 235, 59, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
   animation: floatingBackground 20s ease-in-out infinite;
   z-index: -1;
 }
@@ -63,10 +63,10 @@
   text-align: center;
   margin-bottom: 40px;
   padding: 30px;
-  background: linear-gradient(135deg, white 0%, #c7f7f7 1%, white 20%);
+  background: linear-gradient(135deg, white 0%, #ffeb3b 1%, white 20%);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(199, 247, 247, 0.3);
+  border: 2px solid #000000;
   position: relative;
   overflow: hidden;
 }
@@ -86,7 +86,7 @@
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 20px 0;
-  text-shadow: 0 2px 4px rgba(199, 247, 247, 0.3);
+  text-shadow: 0 2px 4px rgba(255, 235, 59, 0.3);
 }
 
 /* Progreso de compra */
@@ -110,22 +110,23 @@
 
 .paso.completado {
   background: var(--accent-gradient);
-  color: white;
-  box-shadow: 0 4px 15px rgba(7, 255, 255, 0.3);
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(255, 235, 59, 0.4);
+  border-color: #000000;
 }
 
 .paso.activo {
   background: var(--primary-gradient);
   color: var(--text-primary);
   box-shadow: var(--shadow-soft);
-  border-color: rgba(255, 255, 255, 0.8);
+  border-color: #000000;
   animation: pulseActive 2s infinite;
 }
 
 .paso:not(.completado):not(.activo) {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text-secondary);
-  border-color: rgba(199, 247, 247, 0.3);
+  border-color: #cccccc;
 }
 
 @keyframes pulseActive {
@@ -143,11 +144,11 @@
 
 /* Formulario principal */
 .formulario-principal {
-  background: linear-gradient(135deg, white 0%, #c7f7f7 0.5%, white 15%);
+  background: linear-gradient(135deg, white 0%, #ffeb3b 0.5%, white 15%);
   border-radius: var(--border-radius);
   padding: 30px;
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(199, 247, 247, 0.3);
+  border: 2px solid #000000;
   position: relative;
 }
 
@@ -157,14 +158,15 @@
   padding: 25px;
   background: var(--soft-gradient);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(199, 247, 247, 0.2);
+  border: 1px solid #cccccc;
   position: relative;
   transition: all 0.3s ease;
 }
 
 .seccion-formulario:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(199, 247, 247, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #000000;
 }
 
 .seccion-formulario h2 {
@@ -205,25 +207,26 @@
 .campo-grupo select {
   width: 100%;
   padding: 14px 16px;
-  border: 2px solid rgba(199, 247, 247, 0.3);
+  border: 2px solid #cccccc;
   border-radius: 12px;
   font-size: 16px;
-  background: linear-gradient(135deg, white 0%, rgba(199, 247, 247, 0.05) 100%);
+  background: linear-gradient(135deg, white 0%, rgba(255, 235, 59, 0.05) 100%);
   transition: all 0.3s ease;
   box-sizing: border-box;
+  color: #000000;
 }
 
 .campo-grupo input:focus,
 .campo-grupo select:focus {
   outline: none;
-  border-color: #c7f7f7;
+  border-color: #ffeb3b;
   background: white;
-  box-shadow: 0 0 0 4px rgba(199, 247, 247, 0.2);
+  box-shadow: 0 0 0 4px rgba(255, 235, 59, 0.2);
   transform: translateY(-1px);
 }
 
 .campo-grupo input.readonly {
-  background: rgba(199, 247, 247, 0.1);
+  background: rgba(240, 240, 240, 1);
   color: var(--text-secondary);
   cursor: not-allowed;
 }
@@ -261,11 +264,11 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 2px solid rgba(199, 247, 247, 0.3);
+  border: 2px solid #cccccc;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, white 0%, rgba(199, 247, 247, 0.05) 100%);
+  background: linear-gradient(135deg, white 0%, rgba(255, 235, 59, 0.05) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -277,7 +280,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(199, 247, 247, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 235, 59, 0.2), transparent);
   transition: left 0.5s ease;
 }
 
@@ -286,14 +289,16 @@
 }
 
 .comprobante-option:hover {
-  border-color: #c7f7f7;
+  border-color: #ffeb3b;
   transform: translateY(-2px);
   box-shadow: var(--shadow-soft);
+  background: linear-gradient(135deg, white 0%, rgba(255, 235, 59, 0.1) 100%);
 }
 
 .comprobante-option input[type="radio"] {
   margin-right: 15px;
   transform: scale(1.2);
+  accent-color: #ffeb3b;
 }
 
 .comprobante-info strong {
@@ -312,9 +317,9 @@
 .campos-factura {
   margin-top: 20px;
   padding: 20px;
-  background: rgba(249, 214, 213, 0.1);
+  background: rgba(255, 235, 59, 0.1);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(249, 214, 213, 0.3);
+  border: 1px solid #ffeb3b;
   animation: slideDown 0.3s ease;
 }
 
@@ -332,9 +337,9 @@
 /* Términos y condiciones */
 .terminos-condiciones {
   padding: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(199, 247, 247, 0.3);
+  border: 1px solid #cccccc;
 }
 
 .checkbox-label {
@@ -345,12 +350,13 @@
   cursor: pointer;
   font-size: 14px;
   line-height: 1.5;
+  color: #000000;
 }
 
 .checkbox-label input[type="checkbox"] {
   margin: 0;
   transform: scale(1.2);
-  accent-color: #c7f7f7;
+  accent-color: #ffeb3b;
 }
 
 .checkbox-label input[type="checkbox"].error {
@@ -359,13 +365,14 @@
 }
 
 .checkbox-label a {
-  color: #437e6c;
+  color: #000000;
   text-decoration: none;
   font-weight: 600;
+  border-bottom: 2px solid #ffeb3b;
 }
 
 .checkbox-label a:hover {
-  text-decoration: underline;
+  background: rgba(255, 235, 59, 0.2);
 }
 
 /* Botones de acción */
@@ -378,13 +385,13 @@
   padding: 25px;
   background: var(--soft-gradient);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(199, 247, 247, 0.2);
+  border: 1px solid #cccccc;
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(199, 247, 247, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 240, 240, 1) 100%);
   color: var(--text-primary);
-  border: 2px solid rgba(199, 247, 247, 0.5);
+  border: 2px solid #000000;
   padding: 14px 28px;
   border-radius: 12px;
   cursor: pointer;
@@ -398,16 +405,16 @@
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, white 0%, rgba(199, 247, 247, 0.5) 100%);
+  background: linear-gradient(135deg, white 0%, rgba(255, 235, 59, 0.2) 100%);
   transform: translateY(-2px);
   box-shadow: var(--shadow-soft);
-  border-color: #c7f7f7;
+  border-color: #ffeb3b;
 }
 
 .btn-primary {
-  background: var(--primary-gradient);
-  color: var(--text-primary);
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: var(--accent-gradient);
+  color: #000000;
+  border: 2px solid #000000;
   padding: 16px 32px;
   border-radius: 12px;
   cursor: pointer;
@@ -427,7 +434,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   transition: left 0.5s ease;
 }
 
@@ -436,10 +443,10 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #f9d6d5 0%, #c7f7f7 100%);
+  background: linear-gradient(135deg, #ffd700 0%, #ffeb3b 100%);
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
-  border-color: white;
+  border-color: #000000;
 }
 
 .btn-primary:active {
@@ -459,11 +466,11 @@
 }
 
 .resumen-card {
-  background: linear-gradient(135deg, white 0%, #c7f7f7 1%, white 20%);
+  background: linear-gradient(135deg, white 0%, #ffeb3b 1%, white 20%);
   border-radius: var(--border-radius);
   padding: 25px;
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(199, 247, 247, 0.3);
+  border: 2px solid #000000;
   position: relative;
   overflow: hidden;
 }
@@ -485,7 +492,7 @@
   margin: 0 0 20px 0;
   text-align: center;
   padding-bottom: 15px;
-  border-bottom: 2px solid rgba(199, 247, 247, 0.3);
+  border-bottom: 2px solid #000000;
 }
 
 /* Productos en resumen */
@@ -501,12 +508,12 @@
 }
 
 .productos-resumen::-webkit-scrollbar-track {
-  background: rgba(199, 247, 247, 0.1);
+  background: rgba(240, 240, 240, 1);
   border-radius: 10px;
 }
 
 .productos-resumen::-webkit-scrollbar-thumb {
-  background: var(--primary-gradient);
+  background: var(--accent-gradient);
   border-radius: 10px;
 }
 
@@ -515,7 +522,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid rgba(199, 247, 247, 0.3);
+  border-bottom: 1px solid #cccccc;
   transition: all 0.2s ease;
 }
 
@@ -550,7 +557,7 @@
 
 /* Costos del resumen */
 .resumen-costos {
-  border-top: 2px solid rgba(199, 247, 247, 0.3);
+  border-top: 2px solid #000000;
   padding-top: 15px;
   margin-top: 15px;
 }
@@ -561,6 +568,7 @@
   align-items: center;
   margin-bottom: 12px;
   font-size: 14px;
+  color: #000000;
 }
 
 .costo-linea.total {
@@ -568,15 +576,18 @@
   font-weight: 600;
   color: var(--text-primary);
   padding-top: 15px;
-  border-top: 2px solid rgba(199, 247, 247, 0.3);
+  border-top: 2px solid #000000;
   margin-top: 15px;
+  background: rgba(255, 235, 59, 0.2);
+  padding: 15px;
+  border-radius: 8px;
 }
 
 /* Información adicional */
 .info-adicional {
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid rgba(199, 247, 247, 0.3);
+  border-top: 1px solid #cccccc;
 }
 
 .info-item {
@@ -588,11 +599,13 @@
   background: var(--soft-gradient);
   border-radius: 8px;
   transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .info-item:hover {
   transform: translateX(5px);
-  background: rgba(199, 247, 247, 0.2);
+  background: rgba(255, 235, 59, 0.2);
+  border-color: #ffeb3b;
 }
 
 .info-icon {
@@ -745,7 +758,7 @@
   height: 20px;
   margin: -10px 0 0 -10px;
   border: 2px solid transparent;
-  border-top-color: var(--text-primary);
+  border-top-color: #000000;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -758,20 +771,20 @@
 /* Efectos hover mejorados */
 .campo-grupo:hover input:not(:focus),
 .campo-grupo:hover select:not(:focus) {
-  border-color: rgba(199, 247, 247, 0.5);
+  border-color: rgba(255, 235, 59, 0.5);
   transform: translateY(-1px);
 }
 
 /* Mejoras de accesibilidad */
 .campo-grupo input:focus-visible,
 .campo-grupo select:focus-visible {
-  outline: 2px solid #c7f7f7;
+  outline: 2px solid #ffeb3b;
   outline-offset: 2px;
 }
 
 .btn-primary:focus-visible,
 .btn-secondary:focus-visible {
-  outline: 3px solid rgba(199, 247, 247, 0.5);
+  outline: 3px solid rgba(255, 235, 59, 0.5);
   outline-offset: 2px;
 }
 

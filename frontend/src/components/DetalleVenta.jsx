@@ -210,7 +210,7 @@ if (ventaExistente) {
     <div className="detalle-venta-container">
       <div className="detalle-venta-card">
         <div className="detalle-header">
-          <h1>Detalle de Venta #{ventaExistente.idVenta}</h1>
+          <h1>Detalle de Venta </h1>
           <div className="fecha-venta">
             {new Date(ventaExistente.fecha).toLocaleDateString('es-PE')}
           </div>

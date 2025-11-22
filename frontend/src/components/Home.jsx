@@ -77,10 +77,10 @@ const Inicio = () => {
         <div className="hero-content">
           <div className="hero-main">
             <div className="hero-text">
-              <h2>Especialistas en Cuidado Infantil</h2>
+              <h2>Especialistas en la importación de calzados</h2>
               <p className="hero-description">
                 Más de 10 años brindando productos de calidad premium para el cuidado 
-                y bienestar de tu bebé. Confía en nuestra experiencia.
+       de tu pie.
               </p>
             </div>
             <div className="stats-grid">
@@ -181,119 +181,24 @@ const Inicio = () => {
           <h2>Nuestras Categorías</h2>
           <div className="categories-grid">
             <Link to="/pañaleria" className="category-card">
-              <img src="https://images.pexels.com/photos/3662909/pexels-photo-3662909.jpeg" alt="Pañales" />
+              <img src="https://media.revistagq.com/photos/5ca5f975b73808e4ff819508/16:9/w_2560%2Cc_limit/zapatillas_basicas_para_hombre_moda_tendencias_2831.jpg" alt="Zapatillas" />
               <div className="category-content">
-                <h3>Pañales</h3>
-                <p>Las mejores marcas en pañales para cada etapa</p>
+                <h3>Zapatillas</h3>
+                <p>Las mejores modelos y marcas</p>
               </div>
             </Link>
             <Link to="/higiene" className="category-card">
-              <img src="https://images.pexels.com/photos/3738095/pexels-photo-3738095.jpeg" alt="Higiene" />
+              <img src="https://www.lavanguardia.com/files/image_449_220/files/fp/uploads/2024/09/16/66e7ed7477464.r_d.983-480-3581.jpeg" alt="Zapatos" />
               <div className="category-content">
-                <h3>Higiene</h3>
-                <p>Productos suaves y seguros para el cuidado diario</p>
-              </div>
-            </Link>
-            <Link to="/accesorios" className="category-card">
-              <img src="https://images.pexels.com/photos/3661387/pexels-photo-3661387.jpeg" alt="Accesorios" />
-              <div className="category-content">
-                <h3>Accesorios</h3>
-                <p>Todo lo que necesitas para el confort de tu bebé</p>
+                <h3>Zapatos</h3>
+                <p>Los mejores modelos y marcas</p>
               </div>
             </Link>
           </div>
         </div>
       </div>
 
-      <div className="featured-products">
-        <div className="container">
-          <div className="featured-products-header">
-            <h2>Productos Destacados</h2>
-            <p>Nuestra selección de los productos más populares y con mejor valoración por nuestros clientes.</p>
-          </div>
-          <div className="products-grid">
-            <div className="product-card">
-              <div className="product-image">
-                <span className="product-badge badge-offer">Oferta</span>
-                <button className="favorite-btn" aria-label="Añadir a favoritos">
-                  ❤
-                </button>
-                <img
-                  src="https://images.pexels.com/photos/3662909/pexels-photo-3662909.jpeg"
-                  alt="Pañales Ecológicos Premium"
-                />
-              </div>
-              <div className="product-info">
-                <h3 className="product-title">Pañales Ecológicos Premium Talla M</h3>
-                <div className="product-price">
-                  <span className="current-price">S/42.99</span>
-                  <span className="original-price">S/54.99</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image">
-                <button className="favorite-btn" aria-label="Añadir a favoritos">
-                  ❤
-                </button>
-                <img
-                  src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg"
-                  alt="Set de Biberones Anticólicos"
-                />
-              </div>
-              <div className="product-info">
-                <h3 className="product-title">Set de Biberones Anticólicos</h3>
-                <div className="product-price">
-                  <span className="current-price">S/35.99</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image">
-                <span className="product-badge badge-new">Nuevo</span>
-                <button className="favorite-btn" aria-label="Añadir a favoritos">
-                  ❤
-                </button>
-                <img
-                  src="https://images.pexels.com/photos/3738095/pexels-photo-3738095.jpeg"
-                  alt="Crema Hidratante para Bebé"
-                />
-              </div>
-              <div className="product-info">
-                <h3 className="product-title">Crema Hidratante para Bebé 250ml</h3>
-                <div className="product-price">
-                  <span className="current-price">S/18.50</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image">
-                <span className="product-badge badge-offer">Oferta</span>
-                <button className="favorite-btn" aria-label="Añadir a favoritos">
-                  ❤
-                </button>
-                <img
-                  src="https://images.pexels.com/photos/3661387/pexels-photo-3661387.jpeg"
-                  alt="Mochila Cambiador Multifunción"
-                />
-              </div>
-              <div className="product-info">
-                <h3 className="product-title">Mochila Cambiador Multifunción</h3>
-                <div className="product-price">
-                  <span className="current-price">S/69.99</span>
-                  <span className="original-price">S/89.99</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <Link to="/productos" className="view-all-btn">
-            Ver todos los productos
-          </Link>
-        </div>
-      </div>
+     
 
       {/* Info Bar - Ahora arriba de la newsletter */}
       <div className="info-bar">

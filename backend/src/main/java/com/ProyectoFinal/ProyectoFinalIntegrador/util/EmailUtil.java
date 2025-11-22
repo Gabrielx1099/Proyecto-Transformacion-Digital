@@ -25,7 +25,7 @@ public class EmailUtil {
         Message message = new MimeMessage(session);
         message.setFrom(new InternetAddress(remitente));
         message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(destinatario));
-        message.setSubject("Código de verificación - Hospital La Hoz");
+        message.setSubject("Código de verificación - Urban Claudia");
         message.setText("Tu código de verificación es: " + codigo);
 
         Transport.send(message);
