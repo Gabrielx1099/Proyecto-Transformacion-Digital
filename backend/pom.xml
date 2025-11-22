@@ -8,11 +8,13 @@
         <version>3.4.4</version>
         <relativePath/>
     </parent>
-    <groupId>com.ProyectoFinal</groupId>
-    <artifactId>ProyectoFinalIntegrador</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ProyectoFinalIntegrador</name>
-    <description>Demo project for Spring Boot</description>
+
+    <groupId>com.urbanclaudia</groupId>
+    <artifactId>UrbanClaudiaBackend</artifactId>
+    <version>1.0.0</version>
+    <name>Urban Claudia Backend</name>
+    <description>Sistema de ventas para Urban Claudia</description>
+    
     <properties>
         <java.version>17</java.version>
     </properties>
