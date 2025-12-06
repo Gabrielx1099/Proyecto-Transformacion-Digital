@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"
 import '../css/Home.css';
+import CarruselIA from "../components/CarruselIA";
 
 const Inicio = () => {
   useEffect(() => {
@@ -148,6 +149,9 @@ const Inicio = () => {
           </div>
         </div>
       </section>
+      <CarruselIA/>
+
+
 
       <div className="features">
         <div className="container">

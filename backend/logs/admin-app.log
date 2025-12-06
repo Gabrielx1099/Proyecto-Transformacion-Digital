@@ -10911,3 +10911,5 @@ org.hibernate.NonUniqueResultException: Query did not return a unique result: 2 
 2025-12-05 23:33:44.843 [http-nio-8081-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-12-05 23:33:44.843 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2025-12-05 23:33:44.844 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-05 23:40:39.969 [http-nio-8081-exec-2] INFO  c.P.U.Controlador.VentaController - Venta obtenida exitosamente - ID: 98
+2025-12-05 23:40:39.979 [http-nio-8081-exec-4] INFO  c.P.U.Controlador.VentaController - Venta obtenida exitosamente - ID: 98

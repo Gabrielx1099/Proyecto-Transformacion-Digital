@@ -9,7 +9,8 @@ DB_CONFIG = {
     "host": "localhost",
     "user": "root",
     "password": "",
-    "database": "bd_integrador"
+    "database": "bd_integrador",
+    "port": 3308
 }
 
 @app.route("/recomendar_baratos", methods=["GET"])
