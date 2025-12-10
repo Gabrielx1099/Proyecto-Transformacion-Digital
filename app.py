@@ -9,7 +9,7 @@ DB_CONFIG = {
     "host": "localhost",
     "user": "root",
     "password": "",
-    "database": "bd_integrador",
+    "database": "bd_transformacion",
     "port": 3308
 }
 
