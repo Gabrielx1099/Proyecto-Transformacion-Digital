@@ -84,7 +84,7 @@
     </appender>
 
     <!-- CONFIGURACIÓN ESPECÍFICA PARA TU CONTROLADOR ADMINISTRADOR -->
-    <logger name="com.ProyectoFinal.ProyectoFinalIntegrador.Controlador.AdminControlador" level="DEBUG" additivity="false">
+    <logger name="com.ProyectoTransformacionDigital.UrbanClaudiaBackend.Controlador.AdminControlador" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="ERROR_FILE" />
@@ -92,7 +92,7 @@
     </logger>
 
     <!-- CONFIGURACIÓN PARA TODO EL PAQUETE DE LA APLICACIÓN -->
-    <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="INFO" additivity="false">
+    <logger name="com.ProyectoTransformacionDigital.UrbanClaudiaBackend" level="INFO" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="ERROR_FILE" />
@@ -116,7 +116,7 @@
 
     <!-- PERFIL PARA DESARROLLO (más detallado) -->
     <springProfile name="dev">
-        <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="DEBUG" />
+        <logger name="com.ProyectoTransformacionDigital.UrbanClaudiaBackend" level="DEBUG" />
         <logger name="org.springframework.web" level="DEBUG" />
         <logger name="org.springframework.security" level="DEBUG" />
         <logger name="org.hibernate.SQL" level="DEBUG" />
@@ -132,7 +132,7 @@
 
     <!-- PERFIL PARA TESTING -->
     <springProfile name="test">
-        <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="DEBUG" />
+        <logger name="com.ProyectoTransformacionDigital.UrbanClaudiaBackend" level="DEBUG" />
         <logger name="org.springframework" level="WARN" />
         <logger name="org.hibernate" level="WARN" />
         
@@ -144,7 +144,7 @@
 
     <!-- PERFIL PARA PRODUCCIÓN (menos detallado, más seguro) -->
     <springProfile name="prod">
-        <logger name="com.ProyectoFinal.ProyectoFinalIntegrador" level="INFO" />
+        <logger name="com.ProyectoTransformacionDigital.UrbanClaudiaBackend" level="INFO" />
         <logger name="org.springframework" level="WARN" />
         <logger name="org.hibernate" level="WARN" />
         

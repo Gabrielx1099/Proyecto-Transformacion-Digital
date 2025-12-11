@@ -14,6 +14,8 @@ import Productos from './components/Productos';
 import Carrito from './components/Carrito';
 import Subcategoria from './components/Subcategoria';
 import Marca from './components/Marca';
+import Mantenimiento from './components/Mantenimiento';
+
 
 import DetalleVenta from './components/DetalleVenta';
 import FormularioPago from './components/FormularioPago';
@@ -42,6 +44,8 @@ function App() {
                     <Route path="subcategoria" element={<Subcategoria />} />
                     <Route path="marca" element={<Marca />} />
                     <Route path="registro" element={<Registro />} />
+                    <Route path="mantenimiento" element={<Mantenimiento />} />
+
                 </Route>
                 
                 {/* Rutas del flujo de compra */}

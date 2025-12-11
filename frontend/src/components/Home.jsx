@@ -73,6 +73,7 @@ const Inicio = () => {
   </div>
 </section>
 
+      <CarruselIA/>
       {/* Sección Hero - Estadísticas y Servicios */}
       <section className="section hero">
         <div className="hero-content">
@@ -149,7 +150,6 @@ const Inicio = () => {
           </div>
         </div>
       </section>
-      <CarruselIA/>
 
       <div className="features">
         <div className="container">
