@@ -10,7 +10,7 @@ DB_CONFIG = {
     "user": "root",
     "password": "",
     "database": "bd_transformacion",
-    "port": 3308
+    "port": 3306
 }
 
 @app.route("/recomendar_baratos", methods=["GET"])
