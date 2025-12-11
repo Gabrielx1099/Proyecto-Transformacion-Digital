@@ -1,44 +1,54 @@
 from flask import Flask, jsonify
-import mysql.connector
 from flask_cors import CORS
+import mysql.connector
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # ✔ Habilita peticiones desde React
 
-DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "bd_transformacion",
-    "port": 3306
-}
+def conectar():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="bd_transformacion"
+    )
 
-@app.route("/recomendar_baratos", methods=["GET"])
+@app.route("/recomendar_baratos")
 def recomendar_baratos():
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        cursor = conn.cursor(dictionary=True)
+    db = conectar()
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM productos ORDER BY precio ASC LIMIT 10")
+    datos = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return jsonify({"titulo": "Productos más económicos", "recomendaciones": datos})
 
-        # Obtener los 4 productos más baratos
-        cursor.execute("""
-            SELECT id_producto, id_categoria, id_marca, imagen_url, nombre, precio, stock, id_subcategoria
-            FROM productos
-            WHERE activo = 1 AND stock > 0
-            ORDER BY precio ASC
-            LIMIT 4
-        """)
-        productos = cursor.fetchall()
+@app.route("/recomendar_vendidos")
+def recomendar_vendidos():
+    db = conectar()
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("""
+        SELECT p.*, SUM(d.cantidad) AS total_vendidos
+        FROM detalle_venta d
+        INNER JOIN productos p ON p.id_producto = d.id_producto
+        GROUP BY p.id_producto
+        ORDER BY total_vendidos DESC
+        LIMIT 10
+    """)
+    datos = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return jsonify({"titulo": "Más vendidos", "recomendaciones": datos})
 
-        cursor.close()
-        conn.close()
-
-        return jsonify({
-            "status": "ok",
-            "recomendaciones": productos
-        })
-
-    except Exception as e:
-        return jsonify({"error": f"Error al obtener recomendaciones: {str(e)}"}), 500
+@app.route("/recomendar_ofertas")
+def recomendar_ofertas():
+    db = conectar()
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM productos WHERE precio < 100 LIMIT 10")
+    datos = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return jsonify({"titulo": "Ofertas exclusivas", "recomendaciones": datos})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(port=5001, debug=True)
